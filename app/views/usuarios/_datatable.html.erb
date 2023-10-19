@@ -1,0 +1,10 @@
+<%= turbo_frame_tag 'search_usuario' do %>
+  <div id="usuarios">
+    <% usuarios.each do |usuario| %>
+      <%= render usuario %>
+      <p>
+        <%= link_to "Show this usuario", usuario %>
+      </p>
+    <% end %>
+  </div>
+<% end %>
